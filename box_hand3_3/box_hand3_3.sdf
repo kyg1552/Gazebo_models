@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='box_hand3'>
+  <model name='box_hand3_3'>
     <pose frame=''>0 0 0 0 0 0</pose>
     <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>
@@ -50,7 +50,7 @@
     </link>
 
     <link name='rhand'>
-      <pose frame=''>0.15 0.14 -0.22 -1.45 0 -1.57</pose>
+      <pose frame=''>-0.15 0.14 -0.22 -1.45 0 0</pose>
       <visual name='rhand_visual'>
         <geometry>
           <mesh>
@@ -67,7 +67,7 @@
     </link>
 
     <link name='lhand'>
-      <pose frame=''>0.15 0.14 0.22 -1.69 0 -1.57</pose>
+      <pose frame=''>0.15 -0.14 0.22 -1.69 0 3.14</pose>
       <visual name='lhand_visual'>
         <geometry>
           <mesh>
@@ -82,6 +82,7 @@
         </material>
       </visual>
     </link>
+
 
   </model>
 </sdf>

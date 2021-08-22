@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='box_hand2_1'>
+    <pose frame=''>0 0 0 0 0 0</pose>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+    <link name='link'>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.2</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+      </inertial>
+      <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      <visual name='visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>.25 .25 .25</size>
+          </box>
+        </geometry>
+        <material>
+            <ambient>0.922 0.443 0.25 1</ambient>
+            <diffuse>0.922 0.443 0.25 1</diffuse>
+            <specular>0 0 0 0</specular>
+            <emissive>0 0 0 1</emissive>
+        </material>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='cube_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>.07 .07 .07</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name='rhand'>
+      <pose frame=''>0.15 0.14 -0.22 -1.45 0 -1.57</pose>
+      <visual name='rhand_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://humic_hand/RHand.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.8 0.58 1</ambient>
+          <diffuse>1 0.8 0.58 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+
+    <link name='lhand'>
+      <pose frame=''>0.15 0.14 0.22 -1.69 0 -1.57</pose>
+      <visual name='lhand_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://humic_hand/LHand.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.8 0.58 1</ambient>
+          <diffuse>1 0.8 0.58 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+
+  </model>
+</sdf>

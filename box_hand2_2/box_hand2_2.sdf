@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='box_hand1'>
+  <model name='box_hand2_2'>
     <pose frame=''>0 0 0 0 0 0</pose>
     <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>
@@ -31,8 +31,8 @@
           </box>
         </geometry>
         <material>
-            <ambient>0.71 0.51 0.325 1</ambient>
-            <diffuse>0.71 0.51 0.325 1</diffuse>
+            <ambient>0.922 0.443 0.25 1</ambient>
+            <diffuse>0.922 0.443 0.25 1</diffuse>
             <specular>0 0 0 0</specular>
             <emissive>0 0 0 1</emissive>
         </material>
@@ -50,7 +50,7 @@
     </link>
 
     <link name='rhand'>
-      <pose frame=''>0.15 0.14 -0.22 -1.45 0 -1.57</pose>
+      <pose frame=''>0.15 -0.22 -0.15 0 -1.57 3.28</pose>
       <visual name='rhand_visual'>
         <geometry>
           <mesh>
@@ -67,7 +67,7 @@
     </link>
 
     <link name='lhand'>
-      <pose frame=''>0.15 0.14 0.22 -1.69 0 -1.57</pose>
+      <pose frame=''>0.15 0.22 -0.15 0 -1.57 3.</pose>
       <visual name='lhand_visual'>
         <geometry>
           <mesh>
